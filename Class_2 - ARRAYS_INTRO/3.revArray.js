@@ -30,3 +30,19 @@
 
 // Output 2:
 // [6, 5, 2]
+
+
+const reverseArray = (a,s,e) => {
+    while(s<e){
+        [a[s],a[e]] = [a[e],a[s]]
+        s++;
+        e--;
+    }
+
+    console.log(a)
+}
+
+
+reverseArray([1,2,3,4],2,3)
+reverseArray([2,5,6],0,2)
+reverseArray([1,2,3,4,5],0,4)

@@ -22,6 +22,35 @@
 
 // Example Output
 // Output 1:
-// 2
+// 2  
 // Output 2:
 // 1
+
+
+const solve = (a) => {
+    //1. find Max num
+    //2. find freq of max
+    //3. arr length - freq(max)
+
+    let max = a[0], freq = 0;
+
+
+    for(let i=0;i<a.length;i++){
+        if(a[i] > max){
+            max = a[i];
+            freq = 0;
+        }
+        if(a[i] == max){
+            freq++;
+        }
+    }
+
+    // console.log(max,freq)
+
+    console.log(a.length - freq)
+}
+
+solve([3,1,2])
+solve([5,5,2])
+
+

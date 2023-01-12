@@ -33,3 +33,22 @@
 // 0
 // Output 3:
 // 1
+
+
+
+const solve = (a,n) => {
+    for(let i=0;i<a.length;i++){
+        for(let j=i+1;j<a.length;j++){
+            if(a[i] + a[j] == n){
+                return 1
+            }
+        }
+    }
+
+    return 0;
+}
+
+console.log(solve([1,2,3,9],7))
+console.log(solve([1,2,4],4))
+console.log(solve([1,2,2],4))
+

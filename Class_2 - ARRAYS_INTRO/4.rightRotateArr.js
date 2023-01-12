@@ -28,3 +28,27 @@
 
 // Output 2:
 // [6, 2, 5]
+
+
+const rotateArr = (a,k) => {
+    const reverseArray = (a,s,e) => {
+        while(s<e){
+            [a[s],a[e]] = [a[e],a[s]]
+            s++;
+            e--;
+        }
+    
+        // console.log(a)
+    }
+    reverseArray(a,0,a.length-1)
+    reverseArray(a,0,k-1)
+    reverseArray(a,k,a.length-1)
+
+
+    console.log(a)
+} 
+
+rotateArr([1, 2, 3, 4], 2)
+rotateArr([2, 5, 6], 1)
+
+
